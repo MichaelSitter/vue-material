@@ -1,7 +1,7 @@
 <template>
   <div class="md-radio" :class="[themeClass, classes]">
     <div class="md-radio-container" @click="toggleCheck">
-      <input type="radio" :name="name" :id="id" :disabled="disabled" :value="value">
+      <input type="radio" @click="toggleCheck" :name="name" :id="id" :disabled="disabled" :value="value">
       <md-ink-ripple :md-disabled="disabled" />
     </div>
 
